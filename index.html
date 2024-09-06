@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi login</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id="login">
+
+
+        
+
+        <form action="">
+            <h1 id="ttlLogin">Login</h1>
+            <div class="entradaDatos">
+                <input type="text" id="Usuario" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="entradaDatos">
+                <input type="password" id="Contraseña" placeholder="Contraseña" required>
+                <i id="icono" onclick="visualizar()" class='bx bxs-lock-alt'></i>
+
+            </div>
+
+            <div class="recordarClave">
+                <label>
+                    <input type="checkbox"> Recordar
+                </label>
+                <a href="#">¿Olvidó su contraseña?</a>
+            </div>
+
+            <button type="button" onclick="login()" id="btnLogin">Login</button>
+
+            <div class="registrar">
+                <p>¿No tiene una cuenta? <a href="#">Registrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
